@@ -1,18 +1,20 @@
 '''
-Created on 03/lug/2013
-
-@author: Alessio
+PythonLearn
+Test Collections in Pyhton
+@author: Alessio Saltarin
 '''
+
 import unittest
 
+from net.littlelite.pythonlearn.collections import items
 
-class Test(unittest.TestCase):
+
+class TestCollections(unittest.TestCase):
 
 
-    def testName(self):
-        pass
+    def testItems(self):
+        assert items == ['apple', 'banana', 'mango', 'cherry']
 
 
 if __name__ == "__main__":
-    #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
