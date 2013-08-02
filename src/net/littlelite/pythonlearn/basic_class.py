@@ -5,15 +5,12 @@ Classes in Pyhton
 
 '''
 
-def output():
-    bc = BasicClass.fromXY(3,4)
-    bc.x = 9
-    print 'Basic Class 9,4'
-    print 'Sum = ' + str(bc.sum)
+from learnobject import LearnObject
 
-class BasicClass(object):
+class BasicClass(LearnObject):
     '''
     Sample class with basic accessors and properties.
+    Note the style: "Almost without exception, class names use the CapWords convention", from Guido's Style Guide
     '''
     
     def ___get_x(self):
@@ -37,6 +34,11 @@ class BasicClass(object):
 
     y = property(___get_y, ___set_y,
                          doc="""Gets or sets the Y variable.""")
+    
+    def output(self):
+        print '\n=== BASIC CLASS TEST ==='
+        print 'Basic Class [' + str(self.x) + ',' + str(self.y) + ']'
+        print 'Sum = ' + str(self.sum)
     
     @classmethod   
     def fromXY(self, x, y):
