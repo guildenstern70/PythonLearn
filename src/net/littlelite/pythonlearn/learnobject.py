@@ -7,7 +7,7 @@ LearnObject Util Class
 
 class LearnObject(object):
     '''
-    A class to wrap the various code samples in the package
+    A class to wrap the various code samples outputs in the package
     '''
     
     def printcollection(self, title, collection):
@@ -25,5 +25,6 @@ class LearnObject(object):
         print 'There are', len(collection), 'objects in the collection.'
         
     def output(self):
-        print 'Unknown output'
+        raise NotImplementedError("Please Implement this method")
+
         
