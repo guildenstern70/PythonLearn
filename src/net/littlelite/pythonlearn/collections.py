@@ -21,12 +21,20 @@ class Collections(LearnObject):
         self.set_items.add('banana')
         self.set_items.add('apple')
         
+        # Item in list
+        self.item_nr = self.items[2] # is mango
+        
         # Tuples (immutable container: cannot append or delete)
         self.tupleitems = ('apple', 'banana', 'mango')
+        
+        # If item is in list
+        if 'apple' in self.items:
+            pass
 
 
     def output(self):
         self.printcollection('LIST TEST', self.items)
+        self.printdetail('ITEM #', self.item_nr)
         self.printcollection('SET TEST', self.set_items)
         self.printcollection('TUPLE TEST', self.tupleitems)
         

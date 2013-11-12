@@ -24,6 +24,10 @@ class LearnObject(object):
         print '\n=== ' + title + ' ==='
         print 'There are', len(collection), 'objects in the collection.'
         
+    def printdetail(self, title, detail):
+        print '\n=== ' + title + ' ==='
+        print detail
+        
     def output(self):
         raise NotImplementedError("Please Implement this method")
 
