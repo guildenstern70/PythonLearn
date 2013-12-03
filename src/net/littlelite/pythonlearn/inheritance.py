@@ -4,8 +4,8 @@ from learnobject import LearnObject
 
 class BaseClass(LearnObject):
     
-    def __init__(self):
-        print 'Base Class __init__'
+    def __init__(self, name):
+        print 'Base Class __init__ > ' + name
         
     def sum(self, a, b):
         return a+b
@@ -22,7 +22,7 @@ class BaseClass(LearnObject):
         
 
 class ExtendedClass(BaseClass):
-    
+        
     def custom(self, e, f):
         return (e*e)+f
     

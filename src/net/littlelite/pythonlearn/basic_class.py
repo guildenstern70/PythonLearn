@@ -39,6 +39,10 @@ class BasicClass(LearnObject):
         print '\n=== BASIC CLASS TEST ==='
         print 'Basic Class [' + str(self.x) + ',' + str(self.y) + ']'
         print 'Sum = ' + str(self.sum)
+        
+    @staticmethod
+    def static(x):
+        print 'And this is a STATIC METHOD (without self)'
     
     @classmethod   
     def fromXY(self, x, y):
