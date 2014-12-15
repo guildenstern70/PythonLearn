@@ -39,6 +39,7 @@ class BasicClass(LearnObject):
         print '\n=== BASIC CLASS TEST ==='
         print 'Basic Class [' + str(self.x) + ',' + str(self.y) + ']'
         print 'Sum = ' + str(self.sum)
+        print 'str(self) => ' + str(self)
         
     @staticmethod
     def static(x):
@@ -48,7 +49,9 @@ class BasicClass(LearnObject):
     def fromXY(self, x, y):
         "Initialize Basic Class with x and y values. This is a static method"
         return BasicClass(x, y)
-
+    
+    def __repr__(self):
+        return "Object of BasicClass with x=" + str(self._x) + " and y=" + str(self._y)
 
     def __init__(self, xval=10, yval=10):
         " Constructor "

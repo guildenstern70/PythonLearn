@@ -19,6 +19,9 @@ class Dictionaries(LearnObject):
         # Add  new entry
         self.my_dictionary['School'] = "DPS School"
         
+        # Select entry
+        # ie: print self.my_dictionary['School']
+        
         # Remove entry with key 'Name'
         del self.my_dictionary['Name']
             
