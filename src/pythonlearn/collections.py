@@ -1,9 +1,9 @@
-'''
+"""
 PythonLearn
 Collections in Pyhton
 @author: Alessio Saltarin
 
-'''
+"""
 
 from learnobject import LearnObject
 

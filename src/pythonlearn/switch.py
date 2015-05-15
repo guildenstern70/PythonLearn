@@ -1,18 +1,18 @@
-'''
+"""
 PythonLearn
 Switches in Pyhton
 @author: Alessio Saltarin
 
-'''
+"""
 
 from learnobject import LearnObject
 
 class Switch(LearnObject):
 
     def _switch_as_a_dict(self, elem):
-        ''' Elem is a tag containing a word 
+        """ Elem is a tag containing a word
             Return value is choosen on input.
-            Default value is 50 if elem is not found '''
+            Default value is 50 if elem is not found """
         return {
             'name': 21,
             'age': 22,

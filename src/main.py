@@ -1,15 +1,15 @@
-'''
+"""
 PythonLearn
 
 @author: Alessio Saltarin
-'''
+"""
 
-import net.littlelite.pythonlearn.collections as collections
-import net.littlelite.pythonlearn.basic_class as basic_class
-import net.littlelite.pythonlearn.dictionary as dictionary
-import net.littlelite.pythonlearn.forloops as forloops
-import net.littlelite.pythonlearn.inheritance as inheritance
-import net.littlelite.pythonlearn.switch as switch
+import pythonlearn.collections as collections
+import pythonlearn.basic_class as basic_class
+import pythonlearn.dictionary as dictionary
+import pythonlearn.forloops as forloops
+import pythonlearn.inheritance as inheritance
+import pythonlearn.switch as switch
 
 if __name__ == '__main__':
     
@@ -23,14 +23,12 @@ if __name__ == '__main__':
     switch = switch.Switch()
     
     # Test 
-    objects_to_test = (
-                       coll,
+    objects_to_test = (coll,
                        baseclass,
                        dictry,
                        forloops,
                        inh_baseclass,
                        inh_extclass,
-                       switch )   
+                       switch)
     for obj in objects_to_test:
         obj.output()
-    

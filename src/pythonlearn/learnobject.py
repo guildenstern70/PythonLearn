@@ -1,14 +1,14 @@
-'''
+"""
 PythonLearn
 LearnObject Util Class
 @author: Alessio Saltarin
 
-'''
+"""
 
 class LearnObject(object):
-    '''
+    """
     A class to wrap the various code samples outputs in the package
-    '''
+    """
     
     def printcollection(self, title, collection):
         self._printdetails(title, collection)

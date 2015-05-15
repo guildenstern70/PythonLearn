@@ -1,9 +1,9 @@
-'''
+"""
 PythonLearn
 Dictionaries in Pyhton
 @author: Alessio Saltarin
 
-'''
+"""
 
 from learnobject import LearnObject
 

@@ -1,17 +1,17 @@
-'''
+"""
 PythonLearn
 Classes in Pyhton
 @author: Alessio Saltarin
 
-'''
+"""
 
 from learnobject import LearnObject
 
 class BasicClass(LearnObject):
-    '''
+    """
     Sample class with basic accessors and properties.
     Note the style: "Almost without exception, class names use the CapWords convention", from Guido's Style Guide
-    '''
+    """
     
     def ___get_x(self):
         return self._x

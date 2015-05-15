@@ -1,9 +1,9 @@
-'''
+"""
 PythonLearn
 For Loop in Pyhton
 @author: Alessio Saltarin
 
-'''
+"""
 
 from learnobject import LearnObject
 
