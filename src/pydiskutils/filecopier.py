@@ -12,9 +12,9 @@ import shutil
 
 
 def printusage():
-    print """
+    print("""
 Usage: python FileCopier.py [initialdir] [destdir]
-"""
+""")
 
 
 def ensure_dir(f):
@@ -25,16 +25,16 @@ def ensure_dir(f):
 
 def copyfiles(dst, destdir):
     for root, dirs, files in os.walk(dst):
-        print 'examining ', root
+        print('examining ', root)
         for name in files:
             filename = os.path.join(root, name)
             filedest = os.path.join(destdir, name)
-            print 'copying', filename, '... '
-            print '.'
+            print('copying', filename, '... ')
+            print('.')
             try:
                 shutil.copyfile(filename, filedest)
             except WindowsError:
-                print "Access Denied: leaving it alone..."
+                print("Access Denied: leaving it alone...")
 
 
 if __name__ == '__main__':

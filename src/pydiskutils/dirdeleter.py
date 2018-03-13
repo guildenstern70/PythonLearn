@@ -26,7 +26,7 @@ def walktree(curdir, initdir):
         elif S_ISREG(mode):
             pass
         else:
-            print 'Attention: unknown %s' % pathname
+            print('Attention: unknown %s' % pathname)
 
 
 def deletedir(nome, init):
@@ -34,9 +34,9 @@ def deletedir(nome, init):
     if nome.rfind(init) > 0:
         prunefiles(nome)
         os.rmdir(nome)
-        print 'deleted: %s' % nome
+        print('deleted: %s' % nome)
     else:
-        print 'visited: %s' % nome
+        print('visited: %s' % nome)
 
 
 def prunefiles(nome):
@@ -44,12 +44,12 @@ def prunefiles(nome):
     for scanfile in os.listdir(nome):
         path = r'%s\%s' % (nome, scanfile)
         os.remove(path)
-        print ' --- deleted ' + path
+        print(' --- deleted ' + path)
 
 
 def printusage():
     """ Print help """
-    print """
+    print("""
 Usage: python dirdeleter.py initial_dir string
 where
     initial_dir:
@@ -57,7 +57,8 @@ where
     string:
             The subdirectory containing 'string' in its name, or with a
             name equals to 'string' will be deleted.
-"""
+""")
+
 
 if __name__ == '__main__':
     if len(sys.argv) == 3:

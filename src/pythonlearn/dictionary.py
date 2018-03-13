@@ -5,20 +5,24 @@ Dictionaries in Pyhton
 
 """
 
-from learnobject import LearnObject
+from .learnobject import LearnObject
 
-class Dictionaries(LearnObject):
+
+class Dictionaries:
     
     def __init__(self):
         # A dictionary
-        self.my_dictionary = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+        self.my_dictionary = {
+            'Name': 'Zara',
+            'Age': 8,
+            'Class': 'First',
+            'School': "DPS School"
+        }
         
         # Update existing entry
-        self.my_dictionary['Age'] = 8; # update 
-        
+
         # Add  new entry
-        self.my_dictionary['School'] = "DPS School"
-        
+
         # Select entry
         # ie: print self.my_dictionary['School']
         
@@ -26,4 +30,4 @@ class Dictionaries(LearnObject):
         del self.my_dictionary['Name']
             
     def output(self):
-        self.printdictionary("DICTIONARIES", self.my_dictionary)
+        LearnObject.print_dictionary("DICTIONARIES", self.my_dictionary)

@@ -1,11 +1,12 @@
 
 
-from learnobject import LearnObject
+from .learnobject import LearnObject
 
-class BaseClass(LearnObject):
+
+class BaseClass:
     
     def __init__(self, name):
-        print 'Base Class __init__ > ' + name
+        print('Base Class __init__ > ' + name)
         
     def sum(self, a, b):
         return a+b
@@ -18,7 +19,7 @@ class BaseClass(LearnObject):
     
     def output(self):
         results = [self.sum(3, 3), self.multiply(3, 3), self.custom(3, 3)]
-        self.printcollection('INHERITANCE TEST: ', results)
+        LearnObject.print_collection('INHERITANCE TEST: ', results)
         
 
 class ExtendedClass(BaseClass):

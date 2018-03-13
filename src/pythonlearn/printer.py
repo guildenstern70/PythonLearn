@@ -1,9 +1,11 @@
 """
-PythonLearn
-Printer Util Class
-@author: Alessio Saltarin
+    PythonLearn
+
+    Printer Util Class
+    @author: Alessio Saltarin
 
 """
+
 
 class Printer(object):
     """
@@ -13,11 +15,9 @@ class Printer(object):
     def print_output(self):
         self.objtest.output()
 
-
     def __init__(self, object_to_test):
         """
         Constructor.
         Parameters: object_to_test: must have a method 'output'
         """
         self.objtest = object_to_test
-        

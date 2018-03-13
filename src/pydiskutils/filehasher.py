@@ -19,18 +19,18 @@ def setalgo(algorithm):
 
 
 def printusage():
-    print """
+    print("""
 Usage: python FileHasher.py [-algorithm] filename
 where algorithm can be:
     md5
     sha1
 if algorithm is not set, then md5 is used.
-"""
+""")
 
 
 def hash_file(filename, hash_name):
-    f = file(filename, 'rb')
-    print "\nReading %s \n" % f.name;
+    f = open(filename, 'rb')
+    print("\nReading %s \n" % f.name)
     m = setalgo(hash_name)
     read_bytes = 1024  # read 1024 bytes per time
     total_bytes = 0
@@ -39,12 +39,12 @@ def hash_file(filename, hash_name):
         m.update(read_string)
         read_bytes = len(read_string)
         total_bytes += read_bytes
-        print "#",
+        print("#"),
     f.close()
-    print
-    print "\nTotal bytes: %d" % total_bytes
-    print "%s: %s" % (hash_name, m.hexdigest())
-    print
+    print()
+    print("\nTotal bytes: %d" % total_bytes)
+    print("%s: %s" % (hash_name, m.hexdigest()))
+    print()
 
 
 if __name__ == '__main__':

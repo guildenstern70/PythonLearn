@@ -5,30 +5,33 @@ LearnObject Util Class
 
 """
 
+
 class LearnObject(object):
     """
     A class to wrap the various code samples outputs in the package
     """
     
-    def printcollection(self, title, collection):
-        self._printdetails(title, collection)
+    @staticmethod
+    def print_collection(title, collection):
+        LearnObject._print_details(title, collection)
         for item in collection:
-            print item, 
+            print(item),
        
-    def printdictionary(self, title, xdict):
-        self._printdetails(title, xdict)
+    @staticmethod
+    def print_dictionary(title, xdict):
+        LearnObject._print_details(title, xdict)
         for k,v in xdict.items():
-            print '['+k+': '+str(v)+']'
+            print('['+k+': '+str(v)+']')
             
-    def _printdetails(self, title, collection):
-        print '\n=== ' + title + ' ==='
-        print 'There are', len(collection), 'objects in the collection.'
+    @staticmethod
+    def _print_details(title, collection):
+        print('\n=== ' + title + ' ===')
+        print('There are', len(collection), 'objects in the collection.')
         
-    def printdetail(self, title, detail):
-        print '\n=== ' + title + ' ==='
-        print detail
+    @staticmethod
+    def print_detail(title, detail):
+        print('\n=== ' + title + ' ===')
+        print(detail)
         
     def output(self):
         raise NotImplementedError("Please Implement this method")
-
-        

@@ -1,14 +1,15 @@
 """
-PythonLearn
-Collections in Pyhton
-@author: Alessio Saltarin
+    PythonLearn
+
+    Collections in Pyhton
+    @author: Alessio Saltarin
 
 """
 
-from learnobject import LearnObject
+from .learnobject import LearnObject
 
 
-class Collections(LearnObject):
+class Collections:
     
     def __init__(self):
         # Lists
@@ -31,10 +32,8 @@ class Collections(LearnObject):
         if 'apple' in self.items:
             pass
 
-
     def output(self):
-        self.printcollection('LIST TEST', self.items)
-        self.printdetail('ITEM #', self.item_nr)
-        self.printcollection('SET TEST', self.set_items)
-        self.printcollection('TUPLE TEST', self.tupleitems)
-        
+        LearnObject.print_collection('LIST TEST', self.items)
+        LearnObject.print_detail('ITEM #', self.item_nr)
+        LearnObject.print_collection('SET TEST', self.set_items)
+        LearnObject.print_collection('TUPLE TEST', self.tupleitems)

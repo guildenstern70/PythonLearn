@@ -1,6 +1,6 @@
 ## PythonLearn
 
-Examples of Python 2.7 programming
+Examples of Python 3.x programming
 
 ## PyDiskUtils
 
