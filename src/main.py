@@ -1,7 +1,7 @@
 """
-PythonLearn
+    PythonLearn
 
-@author: Alessio Saltarin
+    @author: Alessio Saltarin
 """
 
 import pythonlearn.collections as collections
@@ -10,6 +10,7 @@ import pythonlearn.dictionary as dictionary
 import pythonlearn.forloops as forloops
 import pythonlearn.inheritance as inheritance
 import pythonlearn.switch as switch
+import pythonlearn.comprehension as comprehension
 
 if __name__ == '__main__':
     
@@ -21,6 +22,7 @@ if __name__ == '__main__':
     inh_baseclass = inheritance.BaseClass('pippo')
     inh_extclass = inheritance.ExtendedClass('pippo')
     switch = switch.Switch()
+    comprehension = comprehension.Comprehensions()
     
     # Test 
     objects_to_test = (coll,
@@ -29,6 +31,7 @@ if __name__ == '__main__':
                        forloops,
                        inh_baseclass,
                        inh_extclass,
-                       switch)
+                       switch,
+                       comprehension)
     for obj in objects_to_test:
         obj.output()
