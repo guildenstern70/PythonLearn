@@ -20,7 +20,7 @@ class ForLoops:
             self.outputs['Fruits'].append(fruit)
             
     def for_range(self):
-        for i in range(10,20):
+        for i in range(10, 20):
             self.outputs['Range'].append(i)
        
     def for_characters(self):

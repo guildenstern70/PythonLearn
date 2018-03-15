@@ -11,6 +11,7 @@ import pythonlearn.forloops as forloops
 import pythonlearn.inheritance as inheritance
 import pythonlearn.switch as switch
 import pythonlearn.comprehension as comprehension
+import pythonlearn.composition as composition
 
 if __name__ == '__main__':
     
@@ -23,7 +24,8 @@ if __name__ == '__main__':
     inh_extclass = inheritance.ExtendedClass('pippo')
     switch = switch.Switch()
     comprehension = comprehension.Comprehensions()
-    
+    composition = composition.Table()
+
     # Test 
     objects_to_test = (coll,
                        baseclass,
@@ -32,6 +34,7 @@ if __name__ == '__main__':
                        inh_baseclass,
                        inh_extclass,
                        switch,
-                       comprehension)
+                       comprehension,
+                       composition)
     for obj in objects_to_test:
         obj.output()
